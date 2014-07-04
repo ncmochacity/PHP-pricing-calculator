@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Foundation | Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  	<div class="row">
+  		<div class="large-12 columns">
+  			<h1>PHP Pricing Calculator</h1>
+  		</div>
+  	</div>
+  	<div id="contact" class="clearfix">
+  		<form action="discount.php" method="post">
+  			<label for="product">Product Description<span class="required">*</span></label>
+  			<input type="text" id="product" name="product" placeholder="Product Description" required="required"/>
+  			<label for="price">Price<span class="required">*</span></label>
+  			<input type="text" id="price" name="price" placeholder="Product Price" required="required"/>
+  			<label for="discount">Discount Percentage<span class="required">*</span></label>
+  			<input type="text" id="discount" name="discount" placeholder="Discount Percentage" required="required"/>
+  			<input type="submit" value="Submit" id="submit-btn"/>
+  		</form>
+  </div>
+  <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+ </html>

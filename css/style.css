@@ -1,0 +1,53 @@
+
+body{
+	font-family: "Roboto",sans-serif;
+	font-weight:300;
+	background-color:#666;
+}
+p{
+	font-family: "Roboto",sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+
+}
+h1{
+	font-family: "Source Sans Pro",sans-serif;
+	font-weight: 800;
+	font-size: 3.8em;
+	color:#dfdfdf;
+	margin:5% auto;
+	text-align: center;
+}
+#contact{
+	width:70%;
+	background-color: #e47979;
+	padding:40px;
+	margin:0 5px 10px 5px;
+	margin:50px auto;
+    position:relative;
+}
+#contact input:focus,select:focus,textarea:focus{
+	border: 1px solid #fff;
+    background-color: #eee;
+}
+
+#contact label{
+	display: block;
+}
+#contact .required{
+	font-weight: bold;
+}
+#contact #submit-btn{
+	width:100px;
+	background-color: #000;
+	color: #fff;
+	font-size:0.9em;
+	display: block;
+	height:40px;
+	font-weight: 100;
+	text-align: center;
+	margin:0 auto;
+}
+#contact #submit-btn:hover{
+	background-color: #333;
+}
