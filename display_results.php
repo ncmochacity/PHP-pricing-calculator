@@ -8,29 +8,29 @@
 		$error_message='Sale Price is a required field. ';
 	}
 	else if(!is_numeric($revenue)){
-		$error_message="Sale Price must be a numeric value. ";
+		$error_message='Sale Price must be a numeric value. ';
 
 	}
 	else if($revenue<=0){
-		$error_message="Sale Price must be greater than 0. ";
+		$error_message='Sale Price must be greater than 0. ';
 	}
 	else if(empty($units_sold)){
-		$error_message="Units sold is a required field. ";
+		$error_message='Units sold is a required field. ';
 	}
 	else if(!is_numeric($units_sold)){
-		$error_message="Units sold must be a numeric value. ";
+		$error_message='Units sold must be a numeric value. ';
 	}
 	else if(empty($variable_cost)){
-		$error_message="Units sold is a required field. ";
+		$error_message='Units sold is a required field. ';
 	}
 	else if(!is_numeric($variable_cost)){
-		$error_message="Units sold must be a numeric value. ";
+		$error_message='Units sold must be a numeric value. ';
 	}
 	else if(empty($fixed_cost)){
-		$error_message="Units sold is a required field. ";
+		$error_message='Units sold is a required field. ';
 	}
 	else if(!is_numeric($fixed_cost)){
-		$error_message="Units sold must be a numeric value. ";
+		$error_message='Units sold must be a numeric value. ';
 	}
 	else{
 		$error_message=" ";
@@ -67,19 +67,14 @@
   <body>
   	<div class="row">
   		<h1>Break even calculator</h1>
-  		<?php if(!empty($error_message)){
-  			?>
-  			<p id="error"><?php echo $error_message; ?></p>
-  		<?php } ?>
+  		
   	</div>
   	<div class="row">
       <div class="large-12 columns" id="main">
         <p>Calculating break even units and sale dollars are essential for knowing when revenues and costs are equal
 
         </p>
-        <p>
-        Proin vulputate fringilla bibendum. Nullam dictum sapien at velit euismod, quis iaculis lectus adipiscing. Nam ut tempor nibh, sed pretium neque. Maecenas adipiscing tellus sodales augue molestie facilisis. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Duis vehicula tempus mi ac bibendum. Etiam sed euismod nunc. Integer vitae tortor nulla. Suspendisse porta sollicitudin neque in porta.
-        </p>
+        
       </div>
     </div>
       <div id="content" class="clearfix">
