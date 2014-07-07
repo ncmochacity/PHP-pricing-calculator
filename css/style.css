@@ -17,8 +17,27 @@ h1{
 	margin:3% auto;
 	text-align: center;
 }
-
-
+table{
+	position:relative;
+	left:110px;
+	top:-140px;
+}
+#random h1{
+	color:#fff;
+	border-bottom: 1px dashed #fff;
+}
+#sidebar h1{
+	color:#fff;
+	margin-bottom: 80px;
+	border-bottom: 1px dashed #fff;
+}
+#sidebar ul li{
+	display:block;
+	list-style: none;
+	color:#333;
+	background-color:#dfdfdf;
+	padding:10px 15px 20px 65px;
+}
 #main{
 	padding:7%;
 	width:100%;
