@@ -33,6 +33,7 @@
   					<?php endforeach; ?>
   				</select>
   				<br />
+<<<<<<< HEAD
           <label>Code: </label>
           <input type="text" name="code" />
           <br />
@@ -58,3 +59,8 @@
  </html>
 
 
+=======
+  			</form>
+  		</div>
+  	</div>
+>>>>>>> FETCH_HEAD
