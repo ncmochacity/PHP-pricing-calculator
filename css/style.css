@@ -1,7 +1,7 @@
 
 body{
 	font-family: "Roboto",sans-serif;
-	font-weight:300;
+	font-weight:100;
 	background-color:#cccccc;
 }
 p{
@@ -19,16 +19,25 @@ h1{
 }
 table{
 	position:relative;
-	left:110px;
-	top:-140px;
+	left:90px;
+	top:20px;
+}
+#random{
+	background-color: #eee;
 }
 #random h1{
-	color:#fff;
+	color:#666;
 	border-bottom: 1px dashed #fff;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 700;
+}
+#sidebar{
+	background-color: #dfdfdf;
 }
 #sidebar h1{
-	color:#fff;
-	margin-bottom: 80px;
+	color:#666;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 700;
 	border-bottom: 1px dashed #fff;
 }
 #sidebar ul li{
@@ -48,6 +57,25 @@ table{
 	padding:40px;
 	margin:0 5px 10px 5px;
 	margin:5% auto;
+}
+.action a{
+	color:#333;
+	background-color: #ffcccc;
+	padding: 20px 50px 20px 50px;
+	position:relative;
+	left:100px;
+	top:50px;
+}
+#footer{
+	background-color: #66cccc;
+	margin-top: 300px;
+	padding:30px 20px 10px 20px;
+}
+#footer p{
+	font-family: 'Roboto',sans-serif;
+	font-weight: 300;
+	color:#eee;
+	text-align: center;
 }
 #error{
 	padding:10px;
