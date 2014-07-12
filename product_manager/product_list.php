@@ -1,4 +1,4 @@
-<?php include('../view/header.php'); ?>
+<?php include '../view/header.php'; ?>
 <div class="row" >
       <div class="large-7 columns" id="random">
         <h1>Product List</h1>
@@ -32,7 +32,8 @@
     					<td><?php echo $product['productCode']; ?></td>
     					<td><?php echo $product['productName']; ?></td>
     					<td><?php echo $product['listPrice']; ?></td>
-    					<td><form action="delete_product.php" method="post" id="delete_form">
+    					<td><form action="." method="post" >
+                    <input type="hidden" name="action" value="delete_product" />
     						<input type="hidden" name="product_id" 
     							value="<?php echo $product['productID']; ?>"/>
     						<input type="hidden" name="category_id"
@@ -48,4 +49,4 @@
     	<p class="action"><a href="?action=show_add_form">Add Product</a></p>
 
 </div>
-<?php include('../view/footer.php'); ?>
+<?php include '../view/footer.php'; ?>
