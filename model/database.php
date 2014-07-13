@@ -1,10 +1,7 @@
 <?php
-	$username='root';
-	$password='root';
-	$host = 'localhost';
-	//$db_port = '2083';
+	include('config_database.php');
+	
 	$dbname = 'accessory_shop1';
-	//$dsn="mysql:host=$host;dbname=$dbname;port=$db_port";
 	$dsn="mysql:host=$host;dbname=$dbname"; 
 	
 	try{
