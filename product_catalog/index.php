@@ -39,7 +39,7 @@
 		$discount_amount=number_format($discount_amount,2);
 		$unit_price=number_format($unit_price,2);
 
-		$image_filename='../images/' . $code . '.jpg';
+		$image_filename='../images/' . $code . '.png';
 		$image_alt='Image: ' . $code . '.png';
 
 		include('product_view.php');
