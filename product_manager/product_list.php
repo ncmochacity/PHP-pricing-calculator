@@ -10,6 +10,7 @@
               <th>Name</th>
               <th>Price</th>
             </tr>
+            <?php echo "<h2>" . count($products) . " products found.</h2>" ?>
             <?php foreach ($products as $product) : ?>
             <tr>
               <td><?php echo $product['productID']; ?></td>
