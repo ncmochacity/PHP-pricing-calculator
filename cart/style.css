@@ -1,0 +1,96 @@
+.header-section {
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 999;
+  min-width: 100%; }
+
+.top-bar {
+  background: none;
+  padding: 45px 0.9375rem 90px 0.9375rem;
+  transition: all 0.5s ease 0.1s; }
+  .top-bar ul.title-area img {
+    margin: -30px 0 0 70px; }
+  .top-bar-section ul li{
+  	background-color: #fff;
+  }  
+  .top-bar .top-bar-section ul {
+    background: none; }
+    .top-bar .top-bar-section ul li a:not(.button), .top-bar .top-bar-section ul li.active a:not(.button) {
+      background: #fff;
+      color:#999;
+      line-height: 30px;
+      font-size: 15px;
+      padding: 0;
+      margin: 5px 0 0 0;
+      text-transform: uppercase; }
+  .top-bar li a:not(.button):hover {
+    border-bottom: 2px solid #ef4523; }
+  .top-bar li.active a:not(.button) {
+    border-bottom: 2px solid #ef4523;
+     }
+    .top-bar li.active a:not(.button):hover {
+      background-color: #eee; }
+  .top-bar li {
+    margin-left: 30px; }
+    .top-bar li a {
+      color: #999; 
+  		border-top:none;}
+  .top-bar .top-bar-section ul li:hover:not(.has-form) > a {
+    color: #999; }
+  .top-bar .top-bar-section li ul.dropdown {
+    color: #999;
+     }
+    .top-bar .top-bar-section li ul.dropdown li {
+      margin: 0;
+      border:1px solid #eee;
+       }
+  .top-bar .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar .top-bar-section li ul.dropdown li a:not(.button) {
+    background: #fff;
+    color: #999;
+    border-bottom: none;
+    padding: 20px -4px 40px 45px; }
+  .top-bar .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
+    background: none;
+    border-bottom: 2px solid #ef4523;
+    color: #999; }
+  .top-bar .has-dropdown > a:after {
+    border-color: rgba(255, 255, 255, 0.97) transparent transparent;
+    margin-top: -5px; }
+  .top-bar-section li.active:not(.has-form) a:not(.button):hover{
+  	background-color: #eee;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button):hover{
+  	background-color: #eee;
+  	background:#eee;
+  }
+.contain-to-grid {
+  background-color: rgba(255, 255, 255, 0.97); }
+
+.header-fill {
+  background: #fff;
+  height: 135px; }
+  .header-fill .tablet-mobile-logo img {
+    padding-top: 30px; }
+
+.padding-on-my-header {
+  padding: 17px 0.9475rem 62px 0.9375rem; }
+  .padding-on-my-header ul.title-area img {
+    margin: -5px 0 0 0; }
+
+.full-width {
+  min-width: 100%; }
+
+p {
+  line-height: 3rem;
+  padding-bottom: 30px; }
+
+.content-section .main-content {
+  margin-top: 35px; }
+
+.footer-section {
+  background: #999;
+  min-height: 100px; }
+  .footer-section p {
+    color: #fff;
+    margin-top: 50px; }

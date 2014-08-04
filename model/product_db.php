@@ -27,9 +27,9 @@
 	function add_product($category_id, $code, $name, $price){
 		global $db;
 		$query="INSERT INTO products 
-				(categoryID, productCode, productName, listPrice)
+				(productID,categoryID, productCode, productName, listPrice)
 				VALUES 
-					('$category_id', '$code', '$name', '$price')";
+					('$product_id',$category_id', '$code', '$name', '$price')";
 		$db->exec($query);//returns the count after add statement
 	}
 

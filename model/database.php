@@ -1,7 +1,7 @@
 <?php
 	include('config_database.php');
 	
-	$dbname = 'accessory_shop1';
+	$dbname = 'manarsap_accessory';
 	$dsn="mysql:host=$host;dbname=$dbname"; 
 	
 	try{

@@ -25,7 +25,6 @@
 		include('product_list.php');
 	}
 	else if ($action == 'delete_product'){
-		$product_id= $_POST['product_id'];
 		$category_id=$_POST['category_id'];
 		delete_product($product_id);
 		header("Location: .?category_id=$category_id");
@@ -35,6 +34,7 @@
 		include('product_add.php');
 	}
 	else if ($action == 'add_product'){
+		$product_id=$_POST['product_id'];
 		$category_id= $_POST['category_id'];
 		$code=$_POST['code'];
 		$name=$_POST['name'];
@@ -42,10 +42,10 @@
 
 		if(empty($code) || empty($name) || empty($price)){
 			$error="Invalid product data. Check all fields.";
-			include('../errors/error.php');
+			include('../error/error.php');
 		}
 		else{
-			add_product($category_id, $code, $name, $price);
+			add_product($product_id,$category_id, $code, $name, $price);
 			header("Location: .?category_id=$category_id");
 		}
 	}

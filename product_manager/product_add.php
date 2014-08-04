@@ -14,7 +14,7 @@
 				</select>
 				<br />
 				  <label>Product ID: </label>
-				  <input type="text" name="id" />
+				  <input type="text" name="product_id" />
 				  <label>Code: </label>
 		          <input type="text" name="code" />
 		          <br />
