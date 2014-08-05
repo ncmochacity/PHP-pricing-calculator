@@ -11,7 +11,7 @@ function add_item($key, $quantity){
 	$cost= $products[$key]['cost'];
 	$total =$cost * $quantity;
 	$item= array(
-			'name' => $products[$key]['name'];
+			'name' => $products[$key]['name'],
 			'cost' => $cost,
 			'qty'  => $quantity,
 			'total' => $total
