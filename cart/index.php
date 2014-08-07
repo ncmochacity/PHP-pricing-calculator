@@ -5,10 +5,10 @@
 
 	if(empty($_SESSION['cart12'])) $_SESSION['cart12']=array();
 	$products=array();
-	$products['cca-1132']=array('name' => 'Keyboard Cover', 'cost' => '10');
-	$products['cca-1008']=array('name' => 'Macbook Pro', 'cost' => '1200');
-	$products['cca-688']=array('name' => 'H&M T-Shirt', 'cost' => '12');
-	$products['cca-105']=array('name' => 'Algorithm Textbook', 'cost' => '20');
+	$products['cca-1132']=array('name' => 'Keyboard Cover', 'cost' => '10.51');
+	$products['cca-1008']=array('name' => 'Macbook Pro', 'cost' => '1250.00');
+	$products['cca-688']=array('name' => 'H&M T-Shirt', 'cost' => '12.00');
+	$products['cca-105']=array('name' => 'Algorithm Textbook', 'cost' => '20.00');
 
 	require_once('cart.php');
 	if(isset($_POST['action'])){

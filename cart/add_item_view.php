@@ -46,7 +46,7 @@
 					<label>Name:</label>
 					<select name="productkey">
 						<?php foreach($products as $key => $product) :
-							$cost=number_format($poduct['cost'],2);
+							$cost=number_format($product['cost'],2);
 							$name=$product['name'];
 							$item=$name . '($' . $cost .')';
 

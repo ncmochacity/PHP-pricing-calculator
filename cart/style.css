@@ -3,14 +3,16 @@
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
   position: fixed;
   z-index: 999;
-  min-width: 100%; }
+  min-width: 100%;
+  }
 body{
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Roboto',sans-serif;
   font-size:1em;
   font-weight: 400;
 }
 h1{
   font-weight: 700;
+  color:#e1eaec;
 }
 .top-bar {
   background: none;
@@ -74,7 +76,18 @@ h1{
   }
 .contain-to-grid {
   background-color: rgba(255, 255, 255, 255); }
-
+#arrow{
+  width:100px;
+  margin:-90px auto;
+  height:99px;
+  background:url("../img/arrow.png");
+}
+#arrow:hover{
+  width:100px;
+  height:99px;
+  margin:-90px auto;
+  background:url("../img/down.png");
+}
 .header-fill {
   background: #fff;
   height: 135px; }
@@ -88,26 +101,59 @@ h1{
 
 .full-width {
   min-width: 100%; }
-
+#hero{
+  background:url("../img/main.jpg");
+  text-align: center;
+  width:100%;
+  background-position: 50% 0px;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-color:#e1eaec;
+  overflow: hidden;
+  padding:10em 0 9em 0;
+  position: relative;
+  
+}
+#hero h1{
+  color:#e1eaec;
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+  font-size: 4em;
+  margin: 0 auto;
+}
+h2{
+  margin: 0 0 5px 2px;
+}
+#hero h2{
+  color:#e1eaec;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.8em;
+  margin:0 auto;
+  font-weight:400;
+}
 p {
   line-height: 3rem;
   padding-bottom: 30px; }
 #content{
-  width:70%;
-  background-color:#eee;
-  padding:40px;
-  margin:0 5px 10px 5px;
+  background-color:#66cccc;
   margin:5% auto;
 }
+#content h1{
+  text-align: center;
+}
 #content p a{
-  color:#999;
+  color:#ee5d5d;
   border-bottom: 3px solid #fff; 
-  
   display:block;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   text-align: center;
 
+}
+table{
+  margin:0 auto;
+  padding: 0 10px 0 10px;
 }
 input[type="text"]{
   margin-right: 50px;
@@ -121,16 +167,17 @@ input[type="submit"]{
   display: block;
   text-align: center;
   font-size:1em;
-  font-weight:100;
+  font-weight:700;
   font-family: 'Roboto',sans-serif;
   background:#000;
-  color:#fff;
+  color:#e1eaec;
 }
 .content-section .main-content {
   margin-top: 35px; }
 
 .footer-section {
   background: #999;
+  width:100%;
   min-height: 100px; }
   .footer-section p {
     color: #fff;
