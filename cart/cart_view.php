@@ -8,7 +8,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/foundation.min.css" />
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
+	
 </head>
 <body>
 	<div class="contain-to-grid header-section">
@@ -22,18 +24,12 @@
 			<section class="top-bar-section">
 				<ul class="right">
 					<li class="active"><a href="index.php">Home</a></li>
-					<li><a href="blog.php">Blog</a></li>
-		            <li><a href="#">About us</a></li>
-		            <li><a href="#">Portfolio</a></li>
-		            <li class="has-dropdown">
-		                <a href="#">Services</a>
-		                <ul class="dropdown">
-		                    <li><a href="#">Service #1</a></li>
-		                    <li><a href="#">Service #2</a></li>
-		                    <li><a href="#">Service #3</a></li>
-		                </ul>
+		            <li><a href="#about">About us</a></li>
+		            <li><a href="#portfolio">Portfolio</a></li>
+		            <li>
+		                <a href="#services">Services</a>
 		            </li>
-            		<li><a href="#">Contact</a></li>
+            		<li><a href="#contact">Contact</a></li>
             	</ul>
             </section>
 		</nav>
@@ -54,8 +50,9 @@
 	</section>
 	<div class="row">
 		<div class="small-3 small-centered columns">
-			<a href="#">
-				<div id="arrow"></div>
+			<a href="#" >
+				<div id="arrow">
+				</div>
 			</a>
 		</div>
 	</div>
@@ -63,7 +60,7 @@
 		<div class="clearfix" id="content" >
 				<h1>View Cart</h1>
 				<?php if (count($_SESSION['cart12']) == 0) : ?>
-					<p>There are no items in your cart.</p>
+					<p><i class="fa fa-shopping-cart"></i>There are no items in your cart.</p>
 				<?php else: ?>
 					<form action="." method="post">
 						<input type="hidden" name="action" value="update">
@@ -96,7 +93,7 @@
 						<?php endforeach; ?>
 							<tr>
 								<td colspan="3">Subtotal</td>
-								<td>$<?php echo get_subtotal(); ?></td>
+								<td>$<?php echo cart\get_subtotal(); ?></td>
 							</tr>
 							<tr>
 								<td colspan="4">
@@ -110,6 +107,30 @@
 					<p><a href=".?action=empty_cart">Empty Cart</a></p>
 		</div>
 	</div>
+		<div class="row">
+			<div class="small-4 small-centered columns" id="banner">
+				<img src="../img/banner.png" />
+			</div>
+		</div>
+		<section id="about">
+				<div class="row">
+					<div class="small-12 medium-4 large-4 columns" id="profile">
+						<img src="../img/mypic.png" />
+					</div>
+					<div class="small-12 medium-8 large-8 columns">
+						<p>I hand-code and enjoy working with responsive grid frameworks.
+						Without a technical or a design background,I decided to embark
+						   my 100-Day-Code-Challenge with daily projects with programming
+						   and design . You can follow my latest projects: 
+						</p> 
+						<a href="http://donutsbean.tumblr.com"><i class="fa fa-tumblr-square">
+						</i></a>
+						<a href="https://github.com/ncmochacity?tab=repositories">
+							<i class="fa fa-github-square"></i>
+						</a>
+					</div>
+				</div>
+		</section>
 	<div class="footer-section">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">
@@ -120,7 +141,7 @@
 	<script src="../js/vendor/modernizr.js"></script>
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/foundation.min.js"></script>
-    <script src="../js/jquery.scrollUp.js"></script>
+    <script src="../js/main.js"></script>
     <script>
       $(document).foundation();
     </script>

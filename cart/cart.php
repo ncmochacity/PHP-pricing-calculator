@@ -63,7 +63,7 @@ namespace cart {
 
 	function sort($sort_key){
 		$compare_function=compare_factory($sort_key);
-		uasort($_SESSION['cart13'], $compare_function);
+		uasort($_SESSION['cart12'], $compare_function);
 	}
 }
 ?>

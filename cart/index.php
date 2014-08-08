@@ -11,6 +11,13 @@
 	$products['cca-105']=array('name' => 'Algorithm Textbook', 'cost' => '20.00');
 
 	require_once('cart.php');
+
+	if(isset($_POST['sortkey'])){
+		$sort_key=$_POST['sortkey'];
+	}
+	else{
+		$sort_key='name';
+	}
 	if(isset($_POST['action'])){
 		$action=$_POST['action'];
 	}
@@ -22,19 +29,21 @@
 	}
 	switch($action){
 		case 'add':
-			add_item($_POST['productkey'], $_POST['itemqty']);
+			cart\add_item($_POST['productkey'], $_POST['itemqty']);
 			include('cart_view.php');
 			break;
 		case 'update':
 			$new_qty_list=$_POST['newqty'];
 			foreach($new_qty_list as $key => $qty){
 				if($_SESSION['cart12'][$key]['qty']!= $qty){
-					update_item($key, $qty);
+					cart\update_item($key, $qty);
 				}
 			}
+			cart\sort($sort_key);
 			include('cart_view.php');
 			break;
 		case 'show_cart':
+			cart\sort($sort_key);
 			include('cart_view.php');
 			break;
 		case 'show_add_item':
