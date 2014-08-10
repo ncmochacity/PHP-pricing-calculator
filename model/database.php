@@ -1,5 +1,5 @@
 <?php
-	include('config_database.php');
+	include('config.php');
 	
 	$dbname = 'manarsap_accessory';
 	$dsn="mysql:host=$host;dbname=$dbname"; 

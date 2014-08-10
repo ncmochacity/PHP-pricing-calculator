@@ -176,14 +176,14 @@ i{
   text-transform: uppercase;
 }
 #about{
-  background-color: #f7e5e5;
+  background-color: #fff;
   width:100%;
 }
 #banner{
   margin-bottom: 50px;
 }
 #about i{
-  color:#fff;
+  color:#00cc99;
 }
 #about p{
   font-size: 1.2em;
