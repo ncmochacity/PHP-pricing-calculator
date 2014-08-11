@@ -3,7 +3,7 @@
 		private $name;
 		private $message='';
 		private $hasError=false;
-	}
+	
 	public function_construct($name, $message=''){
 		$this->name=$name;
 		$this->message=$message;
