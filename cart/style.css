@@ -206,7 +206,7 @@ input[type="submit"]{
   margin-left: 0px;
   width:150px;
   height:50px;
-  display: block;
+  display: inline-block;
   text-align: center;
   font-size:1em;
   font-weight:700;
