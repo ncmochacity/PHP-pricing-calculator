@@ -18,7 +18,11 @@
 		<nav class="top-bar important-class" data-topbar>
 			<ul class="title-area">
 				<li class="name">
+<<<<<<< HEAD
 					<img src="../../img/logo.png" width="100" height="100" alt="" id="logo-img" />
+=======
+					<img src="../img/logo.png" width="100" height="100" alt="" id="logo-img" />
+>>>>>>> FETCH_HEAD
 				</li>
 				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
 			</ul>
@@ -35,6 +39,7 @@
             </section>
 		</nav>
 	</div>
+<<<<<<< HEAD
     <section id="hero">
         <div class="row">
             <div id="intro" class="small-12 columns">
@@ -49,11 +54,14 @@
                 <h2>Open to employment and collaboration.</h2>
             </div>
     </section>
+=======
+>>>>>>> FETCH_HEAD
 	<div class="row content-section">
 		<div class="clearfix" id="content" >
 			<h1>Sign Up </h1>
 			<form action="." method="post">
 				<label>First Name: </label>
+<<<<<<< HEAD
 				<input type="text" name="first_name" value="<?php echo htmlspecialchars($first_name) ?>">
 
                 <?php echo $fields-> getField('first_name') -> getHTML(); ?>
@@ -70,6 +78,27 @@
 				<input type="submit" value="Sign Up" name="action" id=""submit>
 				<input type="submit" value="Reset" name="action" id="reset">
 
+=======
+				<input type="text" name="first_name" value="<?php echo htmlspecialchars($first_name); ?>">
+
+				<?php echo $fields->getField('first_name')->getHTML(); ?>
+				<br />
+				<label>Last Name: </label>
+				<input type="text" name="last_name" value="<?php echo htmlspecialchars($last_name); ?>">
+				<?php echo $fields->getField('last_name')->getHTML(); ?>
+				<br />
+				<label>Phone: </label>
+				<input type="text" name="phone" value="<?php echo htmlspecialchars($phone); ?>">
+				<?php echo $fields->getField('phone')->getHTML(); ?>
+				<label>Email: </label>
+				<input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>">
+				<?php echo $fields->getField('email')->getHTML(); ?>
+				<br />
+
+				<input type="submit" value="Sign Up" name="action">
+				<input type="submit" value="Reset" name="action" >
+				<br />
+>>>>>>> FETCH_HEAD
 			</form>
 		</div>
 	</div>

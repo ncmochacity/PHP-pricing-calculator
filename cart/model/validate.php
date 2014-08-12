@@ -2,7 +2,11 @@
 	class Validate{
 		private $fields;
 
+<<<<<<< HEAD
 		public function __construct(){
+=======
+		public function_construct(){
+>>>>>>> FETCH_HEAD
 			$this->fields=new Fields();
 		}
 		public function getFields(){
@@ -44,9 +48,15 @@
 				$field->clearErrorMessage();
 			}
 		}
+<<<<<<< HEAD
 		public function phone($name,$value,$required=false){
 			$field=$this ->fields->getField($name);
 			$this ->text($name,$value,$required);
+=======
+		public function phone($name,$value,$equired=false){
+			$field=$this->fields->getField($name);
+			$this->text($name,$value,$required);
+>>>>>>> FETCH_HEAD
 			if($field->hasError()){
 				return;
 			}
@@ -55,7 +65,11 @@
 			$this->pattern($name,$value,$pattern,$message,$required);
 		}
 		public function email($name,$value,$required=true){
+<<<<<<< HEAD
 			$field=$this ->fields ->getField($name);
+=======
+			$field=$this->fields->getField($name);
+>>>>>>> FETCH_HEAD
 			if(!$required && empty($value)){
 				$field->clearErrorMessage();
 				return;
@@ -83,14 +97,22 @@
 				$field->setErrorMessage('Domain name too long. ');
 				return;
 			}
+<<<<<<< HEAD
 			$atom='[[:alnum:]_!#$%&\'*+\/=?^`{|}~~]+';
+=======
+			$atom='[[:alnum:]_!#$%&\*+\/=?^`{|}~~]+';
+>>>>>>> FETCH_HEAD
 			$dotatom='(\.' . $atom .')*';
 			$address='(^' . $atom . $dotatom . '$)';
 			$char='([^\\\\"])';
 			$esc='(\\\\[\\\\"])';
 			$text='(' . $char . ' | ' . $esc . ')+';
 			$quoted='(^"' . $text . '"$)';
+<<<<<<< HEAD
 			$localPattern='/' . $address . '|' . $quoted . '/';
+=======
+			$localPattern='/' .$address . '|' . $quoted . '/';
+>>>>>>> FETCH_HEAD
 
 			$this->pattern($name,$local, $localPattern,'Invalid Username');
 			if($field->hasError()){
