@@ -46,5 +46,35 @@ $(document).ready(function() {
         }
         return [];
     }
-
+    var offset = 920;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+    var offset=0;
+    var duration=500;
+    jQuery(window).scroll(function(){
+        if(jquery(this).scrollTop() > offset){
+            jquery("#top").fadeIn(duration);
+        }
+        else{
+            jquery("#top").fadeOut(duration);
+        }
+    });
+    jQuery("#top").click(function(event){
+        event.preventDefault();
+        jQuery('html, body').animate({
+            scrollTop: 600
+        }, duration);
+    })
 });

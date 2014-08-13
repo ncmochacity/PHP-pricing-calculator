@@ -50,7 +50,7 @@
 	</section>
 	<div class="row">
 		<div class="small-3 small-centered columns">
-			<a href="#" >
+			<a href="#" id="top" >
 				<div id="arrow">
 				</div>
 			</a>
@@ -131,6 +131,7 @@
 					</div>
 				</div>
 		</section>
+	<a href="#bottom" class="back-to-top" id="top"></a>
 	<div class="footer-section">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">

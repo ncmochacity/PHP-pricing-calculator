@@ -81,9 +81,20 @@ h1{
   .top-bar .toggle-topbar.menu-icon a{
     color:#666;
   }
-  
+ 
 .contain-to-grid {
   background-color: rgba(255, 255, 255, 255); }
+.back-to-top{
+  background:url("../img/arrowup.png");
+  width:70px;
+  height:70px;
+  position:fixed;
+  text-decoration: none;
+  bottom:2em;
+  display:none;
+  right:40px;
+
+}
 #arrow{
   background:url("../img/arrow.png");
   background-position:0 0;
@@ -153,6 +164,7 @@ p {
   text-align: center;
   color:#666;
 }
+
 #content p a{
   color:#666;
   width:20%;
