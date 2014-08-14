@@ -46,6 +46,7 @@ $(document).ready(function() {
         }
         return [];
     }
+<<<<<<< HEAD
     
     
         jQuery(window).scroll(function() {
@@ -64,6 +65,23 @@ $(document).ready(function() {
     
     
     
+=======
+    var offset = 920;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+>>>>>>> FETCH_HEAD
     var offset=0;
     var duration=500;
     jQuery(window).scroll(function(){
@@ -77,7 +95,11 @@ $(document).ready(function() {
     jQuery("#top").click(function(event){
         event.preventDefault();
         jQuery('html, body').animate({
+<<<<<<< HEAD
             scrollTop: 700
+=======
+            scrollTop: 600
+>>>>>>> FETCH_HEAD
         }, duration);
     })
 });
