@@ -14,11 +14,7 @@
 	
 </head>
 <body>
-    <?php
-        echo("<pre>");
-        print_r($GLOBALS);
-        echo("</pre>")
-    ?>
+    
 	<div class="contain-to-grid header-section">
 		<nav class="top-bar important-class" data-topbar>
 			<ul class="title-area">
